@@ -19,6 +19,10 @@
   position: relative;
 }
 
+.react-datepicker__container {
+  display: flex;
+  flex-direction: column;
+}
 .react-datepicker--time-only {
   .react-datepicker__triangle {
     left: 35px;

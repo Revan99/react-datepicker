@@ -6,15 +6,19 @@ export default function CalendarContainer({
   children,
   showPopperArrow,
   arrowProps = {},
+  HoursComponent,
 }) {
   return (
     <div className={`${className} react-datepicker__container`}>
-      <div div className="react-datepicker__triangle--container">
-        {showPopperArrow && (
-          <div className="react-datepicker__triangle" {...arrowProps} />
-        )}
+      <div className="react-datepicker__children__container">
+        <div div className="react-datepicker__triangle--container">
+          {showPopperArrow && (
+            <div className="react-datepicker__triangle" {...arrowProps} />
+          )}
+        </div>
+        <div className="children__container">{children}</div>
       </div>
-      <div className="children__container">{children}</div>
+      {HoursComponent && <HoursComponent />}
     </div>
   );
 }

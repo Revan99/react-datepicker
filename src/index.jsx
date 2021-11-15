@@ -842,6 +842,7 @@ export default class DatePicker extends React.Component {
         ref={(elem) => {
           this.calendar = elem;
         }}
+        HoursComponent={this.props.HoursComponent}
         locale={this.props.locale}
         calendarStartDay={this.props.calendarStartDay}
         chooseDayAriaLabelPrefix={this.props.chooseDayAriaLabelPrefix}

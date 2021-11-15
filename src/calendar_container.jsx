@@ -9,16 +9,11 @@ export default function CalendarContainer({
   HoursComponent,
 }) {
   return (
-    <div className={`${className} react-datepicker__container`}>
-      <div className="react-datepicker__children__container">
-        <div div className="react-datepicker__triangle--container">
-          {showPopperArrow && (
-            <div className="react-datepicker__triangle" {...arrowProps} />
-          )}
-        </div>
-        <div className="children__container">{children}</div>
-      </div>
-      {HoursComponent && <HoursComponent />}
+    <div className={className}>
+      {showPopperArrow && (
+        <div className="react-datepicker__triangle" {...arrowProps} />
+      )}
+      {children}
     </div>
   );
 }

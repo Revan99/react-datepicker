@@ -278,7 +278,6 @@ export default class DatePicker extends React.Component {
 
   constructor(props) {
     super(props);
-    console.log(this.props.HoursComponent);
     this.state = this.calcInitialState();
   }
 
@@ -945,7 +944,6 @@ export default class DatePicker extends React.Component {
         isInputFocused={this.state.focused}
         customTimeInput={this.props.customTimeInput}
         setPreSelection={this.setPreSelection}
-        HoursComponent={this.props.HoursComponent}
       >
         {this.props.children}
       </WrappedCalendar>

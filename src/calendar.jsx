@@ -965,7 +965,6 @@ export default class Calendar extends React.Component {
     return (
       <div ref={this.containerRef}>
         <Container
-          HoursComponent={this.props.HoursComponent}
           className={classnames("react-datepicker", this.props.className, {
             "react-datepicker--time-only": this.props.showTimeSelectOnly,
           })}

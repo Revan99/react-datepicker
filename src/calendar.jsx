@@ -80,7 +80,6 @@ export default class Calendar extends React.Component {
     className: PropTypes.string,
     children: PropTypes.node,
     container: PropTypes.func,
-    HoursComponent: PropTypes.element,
     dateFormat: PropTypes.oneOfType([PropTypes.string, PropTypes.array])
       .isRequired,
     dayClassName: PropTypes.func,
@@ -969,7 +968,6 @@ export default class Calendar extends React.Component {
           className={classnames("react-datepicker", this.props.className, {
             "react-datepicker--time-only": this.props.showTimeSelectOnly,
           })}
-          HoursComponent={this.props.HoursComponent}
           showPopperArrow={this.props.showPopperArrow}
           arrowProps={this.props.arrowProps}
         >

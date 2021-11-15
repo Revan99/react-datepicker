@@ -6,7 +6,6 @@ export default function CalendarContainer({
   children,
   showPopperArrow,
   arrowProps = {},
-  HoursComponent,
 }) {
   return (
     <div className={className}>

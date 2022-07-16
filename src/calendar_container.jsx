@@ -6,7 +6,7 @@ export default function CalendarContainer({
   children,
   showPopperArrow,
   arrowProps = {},
-  HoursComponent,
+  hoursComponent,
 }) {
   return (
     <div className={`${className} react-datepicker__container `}>
@@ -16,7 +16,7 @@ export default function CalendarContainer({
         )}
         <div className="children--container">{children}</div>
       </div>
-      {HoursComponent && <HoursComponent />}
+      {hoursComponent}
     </div>
   );
 }
@@ -26,4 +26,5 @@ CalendarContainer.propTypes = {
   children: PropTypes.node,
   arrowProps: PropTypes.object, // react-popper arrow props
   showPopperArrow: PropTypes.bool,
+  hoursComponent: PropTypes.element,
 };

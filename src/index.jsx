@@ -839,7 +839,7 @@ export default class DatePicker extends React.Component {
     }
     return (
       <WrappedCalendar
-        HoursComponent={this.props.HoursComponent}
+        hoursComponent={this.props.hoursComponent}
         ref={(elem) => {
           this.calendar = elem;
         }}

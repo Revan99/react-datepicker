@@ -8,6 +8,7 @@ export default function CalendarContainer({
   arrowProps = {},
   hoursComponent,
 }) {
+  console.log(hoursComponent);
   return (
     <div className={`${className} react-datepicker__container `}>
       <div className="react-datepicker__children--container">

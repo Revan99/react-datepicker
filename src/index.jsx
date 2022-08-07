@@ -171,6 +171,7 @@ export default class DatePicker extends React.Component {
       PropTypes.string,
       PropTypes.shape({ locale: PropTypes.object }),
     ]),
+    hoursComponent: PropTypes.element,
     maxDate: PropTypes.instanceOf(Date),
     minDate: PropTypes.instanceOf(Date),
     monthsShown: PropTypes.number,

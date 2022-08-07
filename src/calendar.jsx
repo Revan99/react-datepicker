@@ -74,6 +74,7 @@ export default class Calendar extends React.Component {
   }
 
   static propTypes = {
+    hoursComponent: PropTypes.element,
     adjustDateOnChange: PropTypes.bool,
     arrowProps: PropTypes.object,
     chooseDayAriaLabelPrefix: PropTypes.string,
